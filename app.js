@@ -7,6 +7,9 @@ function findSumInString(num1, num2) {
     return "Sum is ".concat(num1 + num2);
 }
 function findTheSum(num1, num2) {
+    if (typeof num1 === 'string' || typeof num2 === 'string') { // type guard
+        return +num1 + +num2;
+    }
     return num1 + num2;
 }
 var result1 = findSum(10, 20);
