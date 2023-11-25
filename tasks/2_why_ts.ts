@@ -12,3 +12,6 @@ console.log(value1);
 
 let value2 = sum(+n1, +n2);
 console.log(value2);
+
+
+
