@@ -67,5 +67,3 @@ btn_element.addEventListener('click', () => {
 
 
 
-
-
