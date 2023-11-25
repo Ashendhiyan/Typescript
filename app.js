@@ -1,10 +1,15 @@
-console.log("Hello Typescript..!!");
-var btn_element = document.getElementById("btn");
-var location1_lat_input_element = document.getElementById('lat1');
-var location1_lon_input_element = document.getElementById('lon1');
-var location2_lat_input_element = document.getElementById('lat2');
-var location2_lon_input_element = document.getElementById('lon2');
-var result_element = document.getElementById('result');
+// console.log("Hello Typescript..!!");
+//
+//
+// let btn_element = document.getElementById("btn");
+//
+// let location1_lat_input_element = document.getElementById('lat1') as HTMLInputElement;
+// let location1_lon_input_element = document.getElementById('lon1') as HTMLInputElement;
+//
+// let location2_lat_input_element = document.getElementById('lat2') as HTMLInputElement;
+// let location2_lon_input_element = document.getElementById('lon2') as HTMLInputElement;
+//
+// let result_element = document.getElementById('result');
 //------------------------------- Distance Calculator ------------------------------------
 //
 // function calcDistance(location1: {lon: number; lat: number}, location2: {lon: number; lat: number}) {
@@ -56,19 +61,15 @@ var result_element = document.getElementById('result');
 //     result_element.innerText = `${distance.toFixed(2)} KM`;
 // });
 //
-// class
-var Person = /** @class */ (function () {
-    function Person(name, age, nic) {
-        this.name = name;
-        this.age = age;
-        this.nic = nic;
-    }
-    Person.prototype.getNic = function () {
-        return this.nic;
-    };
-    return Person;
-}());
-var person1 = new Person('Kavindu', 22, '1234567');
-console.log(person1.name);
-// console.log(person1.nic) // can't access nic directly because nic is private attribute
-console.log(person1.getNic());
+//-----------------------------
+/* tsc app.ts --watch --> Auto compile ( ts --> js) */
+var owner_name_input_element = document.getElementById('ownerName');
+var owner_fixed_amount_input_element = document.getElementById('fixedAmount');
+var add_fix_btn_element = document.getElementById('addFixBtn');
+add_fix_btn_element.addEventListener("click", function () {
+    var name = owner_name_input_element.value;
+    var amount = owner_fixed_amount_input_element.value;
+    console.log("Owner name :", name);
+    console.log("fixed amount :", amount);
+    console.log("Owner : ".concat(name, ", fixed amount : ").concat(amount));
+});

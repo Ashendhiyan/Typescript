@@ -1,15 +1,15 @@
-console.log("Hello Typescript..!!");
-
-
-let btn_element = document.getElementById("btn");
-
-let location1_lat_input_element = document.getElementById('lat1') as HTMLInputElement;
-let location1_lon_input_element = document.getElementById('lon1') as HTMLInputElement;
-
-let location2_lat_input_element = document.getElementById('lat2') as HTMLInputElement;
-let location2_lon_input_element = document.getElementById('lon2') as HTMLInputElement;
-
-let result_element = document.getElementById('result');
+// console.log("Hello Typescript..!!");
+//
+//
+// let btn_element = document.getElementById("btn");
+//
+// let location1_lat_input_element = document.getElementById('lat1') as HTMLInputElement;
+// let location1_lon_input_element = document.getElementById('lon1') as HTMLInputElement;
+//
+// let location2_lat_input_element = document.getElementById('lat2') as HTMLInputElement;
+// let location2_lon_input_element = document.getElementById('lon2') as HTMLInputElement;
+//
+// let result_element = document.getElementById('result');
 
 
 
@@ -67,5 +67,24 @@ let result_element = document.getElementById('result');
 
 
 
+//-----------------------------
+
+
+/* tsc app.ts --watch --> Auto compile ( ts --> js) */
+
+let owner_name_input_element = document.getElementById('ownerName') as HTMLInputElement;
+let owner_fixed_amount_input_element = document.getElementById('fixedAmount') as HTMLInputElement;
+let add_fix_btn_element = document.getElementById('addFixBtn')
+
+add_fix_btn_element.addEventListener("click", ()=> {
+    let name = owner_name_input_element.value;
+    let amount = owner_fixed_amount_input_element.value;
+
+    console.log("Owner name :",name);
+    console.log("fixed amount :",amount);
+
+    console.log(`Owner : ${name}, fixed amount : ${amount}`);
+
+})
 
 
