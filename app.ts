@@ -64,3 +64,8 @@ btn_element.addEventListener('click', () => {
     result_element.innerText = `${distance.toFixed(2)} KM`;
 });
 
+
+
+
+
+

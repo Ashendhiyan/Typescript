@@ -38,3 +38,14 @@ btn_element.addEventListener('click', function () {
     var distance = calcDistance(location1, location2);
     result_element.innerText = "".concat(distance.toFixed(2), " KM");
 });
+// Arrays
+var num_array = [1, 2, 3, 4, 5];
+var str_array = ['ranil', 'gota', 'mahinda'];
+var str_num_array = [1, 2, 'ranil', 3, 'mahinda'];
+var student1 = { id: 1, name: 'kavindu', age: 28, faculty: 'CSE' };
+var student2 = { id: 2, name: 'Kamal', age: 22, faculty: 'TONIC' };
+var student3 = { id: 3, name: 'Ashen', age: 23, faculty: 'SE', uni: 'uoC' };
+var students = [];
+students.push(student1);
+students.push(student2);
+students.push(student3);
