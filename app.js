@@ -63,9 +63,12 @@ var Person = /** @class */ (function () {
         this.age = age;
         this.nic = nic;
     }
+    Person.prototype.getNic = function () {
+        return this.nic;
+    };
     return Person;
 }());
 var person1 = new Person('Kavindu', 22, '1234567');
-console.log(person1);
-person1.name = 'Janith';
-console.log(person1);
+console.log(person1.name);
+// console.log(person1.nic) // can't access nic directly because nic is private attribute
+console.log(person1.getNic());
